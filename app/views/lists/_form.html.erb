@@ -1,0 +1,16 @@
+<div class="form container">
+<%= form_for @list do |f| %>
+<div class="form-group">
+	<%= f.label :title %>
+	<%= f.text_field :title, class:"form-control" %>
+
+	<%= f.label :date %>
+	<%= f.text_field :date, class:"form-control" %>
+
+	<%= f.label :note %>
+	<%= f.text_field :note, class:"form-control" %>
+
+	<%= f.submit %>
+</div>
+<% end %>
+</div>

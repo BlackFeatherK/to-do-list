@@ -1,0 +1,14 @@
+<div class="container">
+	<table class="table table-condensed">
+		<tr>
+			<td><%= @list.title %></td>
+			<td><%= @list.date %></td>
+			<td><%= simple_format(@list.note) %></td>
+		</tr>
+		<tr>
+			<td><%= link_to 'Edit', edit_list_path(@list) %></td>
+			<td><%= link_to 'Destroy', list_path(@list), method: :delete, data:{ confirm:"Are you sure?"} %></td>
+			<td><%= link_to 'Back to index', lists_path %></td>
+		</tr>
+	</table>
+</div>
